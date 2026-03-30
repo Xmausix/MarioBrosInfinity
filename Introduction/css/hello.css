@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 230;
+    display: flex;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    bottom: -60rem;
+    position: relative;
+}
+
+main {
+    flex: 1;
+}
+
+.main {
+    margin-left: 240px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
