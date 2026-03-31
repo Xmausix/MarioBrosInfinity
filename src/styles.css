@@ -1,0 +1,12 @@
+body {
+  min-height: 100vh;
+}
+
+#canvas {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border: 2px solid #343a40;
+  background-color: #000;
+}

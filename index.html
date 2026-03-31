@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario Bros Infinity</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">Mario Bros Infinity</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Przelacz nawigacje"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/game.html">Game</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="py-5 bg-light border-bottom">
+      <div class="container">
+        <h1 class="display-5 fw-bold">Witaj w Mario Bros Infinity</h1>
+        <p class="lead mb-4">
+          Klasyczna platformowka w nowej technologii: Vite + TypeScript + Bootstrap 5.
+        </p>
+        <a class="btn btn-primary btn-lg" href="/game.html">Przejdz do gry</a>
+      </div>
+    </header>
+
+    <main class="container py-5" id="about">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h2 class="h4 card-title">O grze</h2>
+              <p class="card-text">
+                Jest to klon popularnej i kultowej gry mario bros infiniti
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h2 class="h4 card-title">O mnie</h2>
+              <p class="card-text">
+               Ostatnie wzmianki autora pochodzą z 2011 roku pozwoliłem sobie zforkować repo i dostosować kod pod obecne standardy stack to html css typescript oraz bootstrap 5
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h2 class="h4 card-title">Pierwsi autorzy</h2>
+              <p class="card-text">
+               oryginalna wersja znajduje się pod tym adresem:
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+  </html>

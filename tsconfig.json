@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": false,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noEmit": true,
+    "types": ["vite/client"]
+  },
+  "include": ["src", "Enjine", "code", "vite.config.ts"]
+}
