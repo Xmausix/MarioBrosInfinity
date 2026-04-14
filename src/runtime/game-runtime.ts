@@ -1,4 +1,34 @@
 // @ts-nocheck
+
+// fix render draw
+
+function safeDrawImage(
+    ctx: CanvasRenderingContext2D,
+    img: CanvasImageSource | null,
+    ...args: any[]
+) {
+    if (!img) return;
+
+    // canvas zawsze OK
+    if (img instanceof HTMLCanvasElement) {
+        ctx.drawImage(img, ...args);
+        return;
+    }
+
+    // image musi być załadowany i nieuszkodzony
+    if (
+        img instanceof HTMLImageElement &&
+        img.complete &&
+        img.naturalWidth !== 0
+    ) {
+        ctx.drawImage(img, ...args);
+    }
+}
+
+
+
+
+
 /* Auto-generated runtime from legacy sources */
 
 
@@ -4501,7 +4531,8 @@ Mario.LoadingState.prototype.Update = function(delta) {
         this.ImagesLoaded = true;
         var i = 0;
         for (i = 0; i < this.Images.length; i++) {
-            if (Enjine.Resources.Images[this.Images[i].name].complete !== true) {
+            const img = Enjine.Resources.Images[this.Images[i].name];
+            if (!img || !img.complete || img.naturalWidth === 0) {
                 this.ImagesLoaded = false;
                 break;
             }
